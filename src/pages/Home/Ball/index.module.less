@@ -1,0 +1,35 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  .form-container {
+    .form-button {
+      padding-left: 200px;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    display: block;
+    width: 400px;
+    margin: 0 auto;
+    #canvas {
+      display: block;
+      width: 400px;
+      height: 400px;
+      margin: 0 auto;
+    }
+    .form-container {
+      width: 400px !important;
+      .form-item {
+        width: 400px;
+      }
+      .form-button {
+        width: 400px;
+        padding-left: 20px;
+      }
+    }
+  }
+}

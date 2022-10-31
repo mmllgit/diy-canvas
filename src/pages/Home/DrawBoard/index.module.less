@@ -1,0 +1,54 @@
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  .form-container {
+    box-shadow: 0 8px 12px rgb(0 33 79 / 11%);
+    border: 1px solid rgb(214, 211, 211);
+    .form-title {
+      font-size: 20px;
+      color: #165dff;
+      width: 100%;
+      text-align: center;
+    }
+  }
+  .board-container {
+    .board-title {
+      font-size: 30px;
+      width: 500px;
+      text-align: center;
+      transform: translateY(-10px);
+    }
+    .canvas {
+      display: block;
+      border: 1px solid rgb(214, 211, 211);
+      background-color: #fff;
+      box-shadow: 0 8px 12px rgb(0 33 79 / 11%);
+    }
+    .preview {
+      width: 500px;
+      height: 500px;
+      border: 1px solid rgb(214, 211, 211);
+      box-shadow: 0 8px 12px rgb(0 33 79 / 11%);
+    }
+  }
+}
+
+.tip {
+  width: 100vw;
+  font-size: 30px;
+  text-align: center;
+  color: rgb(255, 77, 79);
+  margin-top: 50px;
+}
+
+@media (max-width: 500px) {
+  .container {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 50px;
+  }
+  .form-container {
+    margin-top: 50px;
+  }
+}
